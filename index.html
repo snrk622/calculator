@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>電卓</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="wrapper" id="cal">
+            <div class="display">{{ formula }}</div>
+            <div class="btns_wrapper">
+                <div class="btns">
+                    <input type ="button" class="btn lightGray" value="AC" @click="cal('AC')">
+                    <input type="button" class="btn lightGray" value="+/-" @click="">
+                    <input type="button" class="btn lightGray" value="%" @click="">
+                    <input type="button" class="btn orange" value="÷" @click="cal('/')">
+                </div>
+                <div class="btns">
+                    <input type="button" class="btn gray" value="7" @click="cal('7')">
+                    <input type="button" class="btn gray" value="8" @click="cal('8')">
+                    <input type="button" class="btn gray" value="9" @click="cal('9')">
+                    <input type="button" class="btn orange" value="×" @click="cal('*')">
+                </div>
+                <div class="btns">
+                    <input type="button" class="btn gray" value="4" @click="cal('4')">
+                    <input type="button" class="btn gray" value="5" @click="cal('5')">
+                    <input type="button" class="btn gray" value="6" @click="cal('6')">
+                    <input type="button" class="btn orange" value="-" @click="cal('-')">
+                </div><div class="btns">
+                    <input type="button" class="btn gray" value="1" @click="cal('1')">
+                    <input type="button" class="btn gray" value="2" @click="cal('2')">
+                    <input type="button" class="btn gray" value="3" @click="cal('3')">
+                    <input type="button" class="btn orange" value="+" @click="cal('+')">
+                </div>
+                <div class="btns">
+                    <input type="button" class="btn gray double" value="0" @click="cal('0')">
+                    <input type="button" class="btn gray" value="." @click="cal('.')">
+                    <input type="button" class="btn orange" value="=" @click="cal('=')">
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

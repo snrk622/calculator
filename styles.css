@@ -1,0 +1,54 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.wrapper {
+  width: 500px;
+  margin: 30px auto;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  border-radius: 30px; }
+  .wrapper .display {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    margin: 20px auto 50px;
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: bold;
+    text-align: right;
+    background-color: black;
+    border: 0; }
+  .wrapper .btns_wrapper {
+    width: 90%;
+    margin: 0 auto; }
+    .wrapper .btns_wrapper .btns {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin: 20px 0; }
+      .wrapper .btns_wrapper .btns .btn {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 50px;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        border: none; }
+      .wrapper .btns_wrapper .btns .btn:focus {
+        outline: none; }
+      .wrapper .btns_wrapper .btns .lightGray {
+        background-color: #c0c0c0; }
+      .wrapper .btns_wrapper .btns .gray {
+        background-color: #606060; }
+      .wrapper .btns_wrapper .btns .orange {
+        background-color: #ff8e1e; }
+      .wrapper .btns_wrapper .btns .double {
+        width: 220px; }
